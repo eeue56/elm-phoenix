@@ -34,7 +34,7 @@ update response model =
         (model, Cmd.none)
 
     SuccessfulResponse message ->
-      ( addEvent message model, Cmd.none )
+      (addEvent message model, Cmd.none)
 
     SendMessage message ->
       model ! [ send model message ]
